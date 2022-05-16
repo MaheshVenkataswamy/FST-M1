@@ -1,0 +1,19 @@
+from numpy import append
+
+
+listone = [11,22,33,44,55,66]
+listtwo = [1,2,3,4,5,6]
+listthree = []
+
+print("The first list: ", listone)
+print("The second list: ", listtwo)
+
+for num in listone:
+    if num%2 != 0:
+        listthree.append(num)
+
+for num in listtwo:
+    if num%2 == 0:
+        listthree.append(num)
+
+print("The third list is: ", listthree)

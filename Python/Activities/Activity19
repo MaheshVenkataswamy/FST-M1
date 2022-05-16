@@ -1,0 +1,16 @@
+import pandas
+from pandas import ExcelWriter
+
+data = {
+    "Firstname":['Mahesh','Suresh','Vinu','Giri'],
+    "Lastname": ['Venky','Chnadra','Mahesh','Ravi'],
+    "Emailid":['mahesh@gmail.com','suresh@gmail.com','vinu@gmail.com','giri@gmail.com'],
+    "Phonenumber": ['1234','2345','3456','4567']
+}
+
+dataframe = pandas.DataFrame(data)
+print(dataframe)
+
+writer = ExcelWriter('sample.xlsx')
+dataframe.to_excel(writer, 'Sheet1', index= False)
+writer.save()

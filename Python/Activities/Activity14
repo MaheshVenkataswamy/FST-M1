@@ -1,0 +1,15 @@
+def fibonacci(number):
+    if number<=1:
+        return number
+    else: 
+        return(fibonacci(number-1)+fibonacci(number-2))
+
+nterms = int(input('Please enter a number to generate Fibonacci series: '))
+
+if nterms <=0:
+    print ('Please enter a valid positive number')
+
+else:
+    print ('The fibonacci series is: ')
+    for i in range(nterms):
+        print(fibonacci(i))

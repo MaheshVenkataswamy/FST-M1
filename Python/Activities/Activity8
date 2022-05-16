@@ -1,0 +1,13 @@
+numbers = list(input('Please enter the numbers comma seperated: ').split(", "))
+
+print ('The numbers you enetered are: ', numbers )
+
+#numbers = [1,2,3,4,1]
+
+firstnumber = numbers[0]
+lastnumber = numbers[-1]
+
+if firstnumber == lastnumber:
+    print(True)
+else:
+    print(False)    

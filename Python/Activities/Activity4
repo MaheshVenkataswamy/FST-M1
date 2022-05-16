@@ -1,0 +1,46 @@
+#get users names
+user1 = input("Please enter the User 1's name: ").lower()
+user2 = input("Please enter the user 2's name: ").lower()
+
+while True:
+
+    #Ask for the users's choices
+    user1_answer = input(user1 + ", please make your choice from Rock, Paper & Scissors: ").lower()
+    user2_answer = input(user2 + ", please make your choice from Rock, Paper & Scissors: ").lower()
+
+    if user1_answer == user2_answer:
+        print ("Its a TIE!")
+
+    elif user1_answer == 'rock':
+        if user2_answer == 'scissors':
+            print("Rock wins!")
+        else:
+            print("Paper wins!")
+
+    elif user1_answer == 'scissors':
+        if user2_answer == 'paper':
+            print("Scissors wins!")
+        else:
+            print ("Rock wins!")
+
+    elif user1_answer == 'paper':
+        if user2_answer == 'rock':
+            print("Paper Wins!")
+        else:
+            print("Scissors Wins!")
+
+    else:
+        print ("Invalid input!")
+
+
+    repeat = input ('Do you want to repeat the game: yes/no: ').lower()
+    if repeat == 'yes':
+        pass
+
+    elif repeat == 'no':
+        print ('You selected NO, Exiting the game now')
+        raise SystemExit
+
+    else:
+        print ('invalid input: Exiting the game now')
+        raise SystemExit 

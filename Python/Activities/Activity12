@@ -1,0 +1,8 @@
+def cal_sum(num):
+    if num:
+        return num + cal_sum(num-1)
+    else:
+        return 0
+        
+result = cal_sum(10)
+print (result)        

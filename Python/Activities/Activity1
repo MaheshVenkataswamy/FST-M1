@@ -1,0 +1,13 @@
+name = input ("Hello, what is you name: ")
+age = int (input ("What is your age today: "))
+
+
+
+#Type 1:
+# #year = str ( (2022 - age) + 100)
+#print (name + " will be 100 years old in the year " + year)
+
+
+#Type 2:         
+year = (2022 - age) + 100
+print (f"{name} will be 100 years in the year {year}")

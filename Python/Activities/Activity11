@@ -1,0 +1,13 @@
+fruit_shop = {
+    "mango": 100,
+    "apple": 150,
+    "grapes": 120,
+    "banana": 80,
+    }
+
+desired_fruit = input("Dear userm please enter the fruit you want to check: ").lower()
+
+if(desired_fruit in fruit_shop):
+    print("The fruit is available")
+else:
+    print("The fruit is out of stock")

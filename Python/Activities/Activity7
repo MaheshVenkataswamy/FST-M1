@@ -1,0 +1,7 @@
+numbers = list(input("please enter the numbers to add them (comma selerated): ").split(","))
+sum = 0
+
+for x in numbers:
+    sum += int(x)
+
+print ('the sum of the entered numbers is: ' + str(sum) )

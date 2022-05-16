@@ -1,0 +1,7 @@
+#num_tuple = tuple(input("Please enter the desired numbers into the tuple: ").split(","))
+num_tuple = (10, 20, 33, 46, 55)
+print("The entered numbers into the tuple are:", num_tuple)
+
+for num in num_tuple:
+    if (num % 5 == 0):
+        print(num)

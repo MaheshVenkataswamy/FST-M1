@@ -1,0 +1,17 @@
+
+def cal_sum(numbers):
+    sum= 0
+    for number in numbers:
+        sum += number
+    return sum
+
+num_list = [11,22,33,44]
+
+"""x = input("enter the numbers (comma seperated): ")
+
+num_list = x.split(',')
+print(num_list)"""
+
+result = cal_sum(num_list)
+
+print ("The sum of all the elements in list is: ", str(result))

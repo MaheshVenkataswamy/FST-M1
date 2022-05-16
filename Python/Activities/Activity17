@@ -1,0 +1,14 @@
+import pandas
+
+#creating a dictonary
+
+data = {
+    "usernames": ['user3','user5','user1','user2'],
+    "passwords": ['pswd1','pswd2','pswd3','pswd4']
+}
+
+dataframe = pandas.DataFrame(data)
+
+print (dataframe)
+
+dataframe.to_csv("sample.csv", index=False)

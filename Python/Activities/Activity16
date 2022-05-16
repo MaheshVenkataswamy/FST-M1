@@ -1,0 +1,24 @@
+class Car:
+    'This class represent a car'
+
+    def __init__(self, manufacturer, model, make, color, transmission, doors):
+        self.manufacturer = manufacturer
+        self.model = model
+        self.make = make
+        self.color = color
+        self.transmission = transmission
+        self.doors = doors
+
+    def accelerate(self):
+        print(self.manufacturer + " " + self.model + " has started moving")
+
+    def stop(self):
+        print(self.manufacturer + " " + self.model + " has stopped moving")    
+
+car1 = Car('Toyota','Innova','2012','Gold','Manual','5')
+car2 = Car('Honda','City','2013','Bronze','Automatic','5')
+car3 = Car('Fiat','Linea','2014','Grey','AMT','5')
+car4 = Car('RR','Ghost','2015','White','Automatic','5')
+
+car1.accelerate()
+car1.stop()

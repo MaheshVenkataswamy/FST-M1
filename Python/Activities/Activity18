@@ -1,0 +1,29 @@
+import pandas
+
+dataframe = pandas.read_csv("sample.csv")
+
+#the below reads the full csv file and provides the data
+print("Full data in the sample.csv: ")
+print(dataframe)
+
+#the below reads the csv and provides the column data
+print("Usernames: ")
+print(dataframe["usernames"])
+
+#the below reads the csv and provides the row data
+print("Passwords: ")
+print(dataframe["passwords"])
+
+# to print only the first column data
+print("first column data: ")
+print("username:", dataframe["usernames"][1], " " , "password:", dataframe["passwords"][1])
+
+# to sort the column data in ascending order
+print ("The usernames in ascendong order:")
+print (dataframe.sort_values("usernames", ascending= True))
+	
+#Sort the Passwords column in descending order
+print("Data sorted in descending Passwords:")	
+print(dataframe.sort_values('passwords', ascending=False))
+
+
